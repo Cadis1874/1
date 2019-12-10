@@ -1,14 +1,11 @@
-/* 第一块导航栏 */
+/* 导航栏1 */
 .header {
   width: 100%;
   height: 62px;
   background-color: #fff;
-  display: table;
-  position: fixed;
-  z-index: 9;
 }
 
-.header .header-contain {
+.header-contain {
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
@@ -16,30 +13,29 @@
   vertical-align: middle;
 }
 
-.header .header-contain .header-l {
+.header-l {
   float: left;
 }
-
-.header .header-contain .header-l .header-l-font {
+.header-l-font {
   display: inline-block;
   vertical-align: top;
   height: 31px;
   margin-top: 3px;
 }
 
-.header .header-contain .header-l .header-l-font .uns {
+ .header-l-font .uns {
   margin-left: 12px;
   font-weight: 700;
 }
 
-.header .header-contain .header-l .header-l-font span:nth-child(2) {
+.header-l-font span:nth-child(2) {
   position: absolute;
   top: 30px;
   left: 64px;
   font-size: 13px;
 }
 
-.header .header-contain .header-l .search {
+.header-l .search {
   display: inline-block;
   margin-left: 60px;
   width: 770px;
@@ -50,14 +46,14 @@
   border: 1px solid transparent;
 }
 
-.header .header-contain .header-l .search .sousuo {
+.search .sousuo {
   height: 38px;
   width: 30px;
   display: inline-block;
   position: relative;
 }
 
-.header .header-contain .header-l .search svg {
+.search svg {
   width: 30px;
   height: 16px;
   position: absolute;
@@ -66,7 +62,7 @@
   opacity: 0.6;
 }
 
-.header .header-contain .header-l .search input {
+.search input {
   height: 40px;
   border-radius: 24px;
   background-color: #eee;
@@ -82,7 +78,7 @@
 
 }
 
-.header .header-contain .header-l .logo {
+.header-l .logo {
   margin-top: 6px;
   height: 32px;
   width: 32px;
@@ -94,23 +90,23 @@
   margin-top: 10px;
 }
 
-.header .header-r ul {
+.header-r ul {
   display: inline-block;
   padding-left: 36px;
   padding-right: 36px;
 }
 
-.header .header-r ul li {
+.header-r ul li {
   display: inline-block;
   font-size: 14px;
 }
 
-.header .header-r ul li .en {
+.en {
   padding: 20px 12px;
   color: #767676;
 }
 
-.header .header-r ul li ._3DJPT {
+._3DJPT {
   margin-left: 5px;
   width: 18px;
   height: 18px;
@@ -176,28 +172,28 @@
   margin-left: 10px;
 }
 
-/* 第二块导航栏 */
+/* 导航栏2 */
 .nav {
   width: 100%;
   height: 56px;
   background-color: #fff;
-  position: fixed;
+  position: absolute;
   top: 61.9px;
   z-index: 9;
 }
 
-.nav .nav-left {
+.nav-left {
   padding-left: 20px;
   padding-right: 20px;
   float: left;
 }
 
-.nav .nav-left .edi {
+.edi {
   height: 56px;
   display: inline-block;
 }
 
-.nav .nav-left .edi li {
+.edi li {
   line-height: 56px;
 }
 
@@ -224,12 +220,8 @@
   color: #767676;
 }
 
-.nav .nav-right ul li:nth-child(1) {
-  margin-left: 21px !important;
-}
-
-/* 大图 */
-.Bigimg {
+/* 第三块 */
+.pic {
   width: 100%;
   height: 593px;
   margin-bottom: 48px;
@@ -237,12 +229,12 @@
   top: 118px;
 }
 
-.Bigimg img {
+.pic img {
   width: 100%;
   height: 593px;
 }
 
-.Bigimg .center {
+.Di {
   position: absolute;
   left: 360px;
   top: 135px;
@@ -250,17 +242,16 @@
   margin-right: auto;
   width: 684px;
   height: 262px;
-  /* background-color: pink; */
 }
 
-.Bigimg .center .unsplash {
+.pic .Di .unsplash {
   font-size: 46px;
   font-weight: 700;
   margin-bottom: 16px;
   color: #fff;
 }
 
-.Bigimg .center h1 {
+.pic .Di h1 {
   margin-bottom: 0;
   font-weight: 400;
   font-size: 18px;
@@ -268,7 +259,7 @@
   color: #fff;
 }
 
-.Bigimg .center p {
+.pic .Di p {
   font-weight: 400;
   font-size: 18px;
   color: #fff;
@@ -276,7 +267,7 @@
   margin-bottom: 24px;
 }
 
-.Bigimg .center .center-search {
+.center-search {
   width: 864px;
   height: 54px;
   background-color: white;
@@ -285,21 +276,21 @@
   margin-bottom: 16px;
 }
 
-.Bigimg .center .center-search button {
+.center-search button {
   width: 34px;
   background-color: #fff;
   border: none;
   height: 54px;
 }
 
-.Bigimg .center .center-search button svg {
+ .center-search button svg {
   width: 20px;
   height: 20px;
   opacity: 0.6;
   padding-left: 14px;
 }
 
-.Bigimg .center .center-search input {
+.center-search input {
   top: 20px;
   left: 48px;
   position: absolute;
@@ -307,10 +298,9 @@
   border: none;
 }
 
-.Bigimg .center .center-search input:focus {
+.center-search input:focus {
   outline: none;
 }
-
-.Bigimg .center .center-font {
+ .center-font {
   color: #fff;
 }
